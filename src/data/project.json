@@ -1,0 +1,25 @@
+{
+    "projectData": [
+        {
+            "id": 1,
+            "title": "Portefolio",
+            "description": "Ce portfolio présente mes projets, mon parcours, et les technologies que j’utilise au quotidien pour créer des interfaces modernes, performantes et accessibles.",
+            "preview_path": "/portefolio.png",
+            "text": "oui"
+        },
+        {
+            "id": 2,
+            "title": "Projet Aquaponie",
+            "description": "Ce portfolio présente mes projets, mon parcours, et les technologies que j’utilise au quotidien pour créer des interfaces modernes, performantes et accessibles.",
+            "preview_path": "/aquaponie.jpg",
+            "text": "oui"
+        },
+        {
+            "id": 3,
+            "title": "Portefolio",
+            "description": "Ce portfolio présente mes projets, mon parcours, et les technologies que j’utilise au quotidien pour créer des interfaces modernes, performantes et accessibles.",
+            "preview_path": "/portefolio.png",
+            "text": "oui"
+        }
+    ]
+}

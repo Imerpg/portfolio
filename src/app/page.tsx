@@ -1,10 +1,16 @@
-import Image from "next/image";
+'use client'
+
+import { useEffect } from "react";
 import Profile from "./components/profile";
+import Projects from "./components/projects";
 
 export default function Home() {
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen min-w-screen text-white p-10">
+    <div className="flex flex-col snap-y snap-mandatory" >
       <Profile/>
+      <Projects/>
     </div>
+    
   );
 }
