@@ -2,24 +2,35 @@
     "projectData": [
         {
             "id": 1,
-            "title": "Portefolio",
-            "description": "Ce portfolio présente mes projets, mon parcours, et les technologies que j’utilise au quotidien pour créer des interfaces modernes, performantes et accessibles.",
-            "preview_path": "/portefolio.png",
-            "text": "oui"
+            "title": "Application métier Revit (C#)",
+            "description": "Développement d'une application C# connectée à Revit via APIs pour interagir avec une plateforme web (Angular/Laravel).",
+            "preview_path": "/keyros.jpg",
+            "text": "Keyros Groupe",
+            "link": "#"
         },
         {
             "id": 2,
-            "title": "Projet Aquaponie",
-            "description": "Ce portfolio présente mes projets, mon parcours, et les technologies que j’utilise au quotidien pour créer des interfaces modernes, performantes et accessibles.",
-            "preview_path": "/aquaponie.jpg",
-            "text": "oui"
+            "title": "AlizéeAccueil (PHP)",
+            "description": "Application web de gestion logistique pour les ports de plaisance, centralisant les données clients sur serveur FTP.",
+            "preview_path": "/alizee_soft_logo.jpg",
+            "text": "Alizée Soft",
+            "link": "#"
         },
         {
             "id": 3,
-            "title": "Portefolio",
-            "description": "Ce portfolio présente mes projets, mon parcours, et les technologies que j’utilise au quotidien pour créer des interfaces modernes, performantes et accessibles.",
+            "title": "Système Aquaponie Connecté",
+            "description": "Mise en place d'un système maraîcher avec Raspberry Pi (C++), MySQL et Node-RED pour le monitoring en temps réel.",
+            "preview_path": "/aquaponie.jpg",
+            "text": "Projet BTS SNIR",
+            "link": "#"
+        },
+        {
+            "id": 4,
+            "title": "Portfolio Personnel",
+            "description": "Présentation de mon parcours et de mes projets en utilisant les technologies modernes de développement web.",
             "preview_path": "/portefolio.png",
-            "text": "oui"
+            "text": "Ce projet",
+            "link": "#"
         }
     ]
 }
