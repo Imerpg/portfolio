@@ -1,0 +1,44 @@
+{
+    "educationData": [
+        {
+            "id": 1,
+            "title": "Mastère Manager en Architecture et Applications Logicielles des SI",
+            "subtitle": "Formation en alternance",
+            "school": "CESI - Labège",
+            "period": "Nov. 2023 - Oct. 2025",
+            "description": "Spécialisation en ingénierie logicielle complexe, conception d'architectures distribuées et scalables, modélisation avancée et gestion de projet technique."
+        },
+        {
+            "id": 2,
+            "title": "Bachelor Concepteur Développeur d'Applications",
+            "subtitle": "Formation en alternance",
+            "school": "CESI - Labège",
+            "period": "Oct. 2022 - Nov. 2023",
+            "description": "Approfondissement du cycle de vie logiciel, développement d'applications métiers lourdes et web, et implémentation de patterns d'architecture propres."
+        },
+        {
+            "id": 3,
+            "title": "Licence Professionnelle AIS (Administrateur d'Infrastructures Sécurisées)",
+            "subtitle": "Spécialité Cybersécurité en alternance",
+            "school": "Lycée Jules Fil - Carcassonne",
+            "period": "Oct. 2021 - Oct. 2022",
+            "description": "Focus sur la sécurité applicative, la gestion et la sécurisation des infrastructures système, réseaux et serveurs de stockage."
+        },
+        {
+            "id": 4,
+            "title": "BTS SNIR (Système Numérique Informatique et Réseau)",
+            "subtitle": "Option Informatique et Réseaux",
+            "school": "Lycée Jules Fil - Carcassonne",
+            "period": "Sept. 2019 - Juil. 2021",
+            "description": "Bases du développement logiciel bas niveau et de l'interfaçage système. Programmation (C/C++), bases de données et projets IoT."
+        },
+        {
+            "id": 5,
+            "title": "Baccalauréat STI2D",
+            "subtitle": "Sciences et Technologies de l'Industrie et du Développement Durable",
+            "school": "Lycée Jules Fil - Carcassonne",
+            "period": "Sept. 2017 - Juil. 2019",
+            "description": "Sensibilisation aux technologies de l'information, aux systèmes numériques et à la logique de programmation."
+        }
+    ]
+}

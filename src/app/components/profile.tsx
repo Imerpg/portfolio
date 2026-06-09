@@ -1,57 +1,49 @@
 import Image from "next/image";
-import { FaAngleDown, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Profile() {
     return (
-        <section className="flex flex-col items-center justify-center min-h-screen snap-start relative">
-            <div className="rounded-[2.5rem] bg-white/10 backdrop-blur-xl shadow-2xl ring-1 ring-white/20 transition-all hover:bg-white/15">
-                <div className="p-8 md:p-12 flex flex-col items-center">
-                    <div className="relative p-1 rounded-full bg-gradient-to-b from-white/50 to-transparent">
+        <section id="profile" className="w-full py-12 px-6 flex flex-col items-center justify-center">
+            <div className="rounded-[2rem] bg-white/5 backdrop-blur-xl shadow-xl ring-1 ring-white/10 max-w-xl w-full p-6 md:p-10 transition-all hover:bg-white/10">
+                <div className="flex flex-col items-center text-center">
+                    <div className="relative p-1 rounded-full bg-gradient-to-b from-white/30 to-transparent">
                         <Image
                             src="/profile.jpg"
                             alt="Photo de Rémi Constans"
-                            width={160}
-                            height={160}
-                            className="rounded-full object-cover w-40 h-40 border-2 border-white/20 shadow-lg"
+                            width={140}
+                            height={140}
+                            className="rounded-full object-cover w-32 h-32 md:w-36 md:h-36 border border-white/10 shadow-md"
                             priority
                         />
                     </div>
 
-                    <h1 className="mt-6 text-4xl font-bold text-white tracking-tight">
+                    <h1 className="mt-5 text-3xl md:text-4xl font-bold text-white tracking-tight">
                         Rémi Constans
                     </h1>
-                    <p className="text-blue-200/80 font-medium mt-2">Développeur Fullstack</p>
+                    <p className="text-blue-300 font-semibold mt-1.5 text-base md:text-lg">
+                        Développeur Concepteur C# / .NET & Web
+                    </p>
+                    
+                    <div className="w-12 h-[1px] bg-white/20 my-4"></div>
 
-                    <div className="mt-8 flex gap-6">
-                        <a
-                            href="https://github.com/Imerpg"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="GitHub"
-                            className="text-white/70 hover:text-white transition-colors"
-                        >
-                            <FaGithub size={32} />
+                    {/* Accroche */}
+                    <p className="text-slate-300 text-sm md:text-base leading-relaxed font-normal max-w-md opacity-90">
+                        Développeur concepteur fort de 3 ans d'expérience en alternance, je maîtrise le développement d'applications lourdes et de plateformes métier. Rigoureux et passionné par l'optimisation de systèmes, je mets ma polyvalence et mon autonomie au service de vos projets complexes.
+                    </p>
+
+                    <div className="mt-6 flex gap-5 items-center">
+                        <a href="https://github.com/Imerpg" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
+                            <FaGithub size={24} />
                         </a>
-                        <a
-                            href="https://www.linkedin.com/in/remi-constans"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="LinkedIn"
-                            className="text-white/70 hover:text-white transition-colors"
-                        >
-                            <FaLinkedin size={32} />
+                        <a href="https://www.linkedin.com/in/remi-constans" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
+                            <FaLinkedin size={24} />
+                        </a>
+                        <a href="mailto:remiconstans11@gmail.com" className="text-white/60 hover:text-white transition-colors">
+                            <FaEnvelope size={22} />
                         </a>
                     </div>
                 </div>
             </div>
-
-            <a
-                href="#project"
-                className="absolute bottom-10 animate-bounce cursor-pointer p-4 rounded-full bg-white/10 backdrop-blur-lg shadow-xl ring-1 ring-white/20 hover:bg-white/20 transition-all"
-                aria-label="Voir mes projets"
-            >
-                <FaAngleDown size={28} className="text-white"/>
-            </a>
         </section>
     );
 }

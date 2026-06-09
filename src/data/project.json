@@ -3,33 +3,37 @@
         {
             "id": 1,
             "title": "Application métier Revit (C#)",
-            "description": "Développement d'une application C# connectée à Revit via APIs pour interagir avec une plateforme web (Angular/Laravel).",
+            "subtitle": "Keyros Groupe (Alternance)",
+            "description": "Conception d'une application lourde. Connectée aux API Autodesk Revit, elle assure le séquençage et la synchronisation de flux de données en temps réel avec une infrastructure web (Angular / Laravel).",
             "preview_path": "/keyros.jpg",
-            "text": "Keyros Groupe",
+            "tags": ["CSharp", ".NET Core", "API Revit", "Angular", "Laravel"],
             "link": "#"
         },
         {
             "id": 2,
             "title": "AlizéeAccueil (PHP)",
-            "description": "Application web de gestion logistique pour les ports de plaisance, centralisant les données clients sur serveur FTP.",
+            "subtitle": "Alizée Soft (Job d'été)",
+            "description": "Développement en autonomie d'une application web de gestion logistique pour les ports de plaisance pour l'enregistrement. Réalisation complète et sécurisation de la centralisation des flux clients via des serveurs FTP distants.",
             "preview_path": "/alizee_soft_logo.jpg",
-            "text": "Alizée Soft",
+            "tags": ["PHP", "JSON", "Flux de données", "FTP", "MySQL"],
             "link": "#"
         },
         {
             "id": 3,
             "title": "Système Aquaponie Connecté",
-            "description": "Mise en place d'un système maraîcher avec Raspberry Pi (C++), MySQL et Node-RED pour le monitoring en temps réel.",
+            "subtitle": "Projet de fin d'études BTS SNIR",
+            "description": "Mise en place d'une infrastructure IoT maraîchère. Développement de scripts bas niveau (C++) sur Raspberry Pi pour la collecte des capteurs, interfaçage avec une base MySQL et orchestration des flux de supervision en temps réel via Node-RED.",
             "preview_path": "/aquaponie.jpg",
-            "text": "Projet BTS SNIR",
+            "tags": ["C++", "IoT", "Raspberry Pi", "Node-RED", "MySQL"],
             "link": "#"
         },
         {
             "id": 4,
             "title": "Portfolio Personnel",
-            "description": "Présentation de mon parcours et de mes projets en utilisant les technologies modernes de développement web.",
+            "subtitle": "Projet Personnel",
+            "description": "Conception et optimisation de cette vitrine numérique. Développé avec des technologies modernes.",
+            "tags": ["Next.js", "React", "Tailwind CSS", "Vercel"],
             "preview_path": "/portefolio.png",
-            "text": "Ce projet",
             "link": "#"
         }
     ]
