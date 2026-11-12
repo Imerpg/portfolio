@@ -9,7 +9,7 @@ export default function Profile() {
                     
                     <div className="relative p-1 rounded-full bg-white/10 border border-white/5 shadow-inner">
                         <Image
-                            src="/profile.jpg"
+                            src="/profile.png"
                             alt="Photo de Rémi Constans"
                             width={140}
                             height={140}
