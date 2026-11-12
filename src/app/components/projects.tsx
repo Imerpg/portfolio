@@ -85,7 +85,7 @@ export default function Projects() {
                                 <div className="flex items-center justify-between gap-3 h-6 mb-3">
                                     <div className="flex items-center gap-2 min-w-0 h-6">
                                         <GoRepo className="shrink-0 text-slate-400 text-base" />
-                                        <span className="font-semibold text-blue-400 group-hover\:underline text-base truncate">
+                                        <span className="font-semibold group-hover\:underline text-base truncate">
                                             {formatRepoName(project.name)}
                                         </span>
                                     </div>
@@ -127,7 +127,7 @@ export default function Projects() {
                                     ) : (
                                         <span />
                                     )}
-                                    <span className="text-blue-400 font-medium flex items-center gap-1 group-hover\:translate-x-0.5 transition-transform">
+                                    <span className="font-medium flex items-center gap-1 group-hover\:translate-x-0.5 transition-transform">
                                         Voir <FaAngleRight className="text-xs" />
                                     </span>
                                 </div>
