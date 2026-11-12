@@ -6,10 +6,10 @@ export default function Education() {
         <section id="education" className="w-full py-12 px-6 flex flex-col items-center justify-center">
             <div className="w-full max-w-6xl">
                 <div className="mb-12 text-center md:text-left">
-                    <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
                         Mes Formations
                     </h2>
-                    <p className="text-slate-400 mt-1.5 text-sm md:text-base">
+                    <p className="text-slate-400 mt-1.5 text-lg md:text-xl">
                         Mon parcours académique et mes diplômes.
                     </p>
                 </div>
@@ -25,19 +25,19 @@ export default function Education() {
 
                                 <div className="flex flex-col w-full">
                                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 mb-1">
-                                        <h3 className="text-base md:text-lg font-bold text-white tracking-tight">
+                                        <h3 className="text-lg md:text-xl font-bold text-white tracking-tight">
                                             {edu.title}
                                         </h3>
-                                        <span className="text-[11px] px-2.5 py-0.5 rounded-full border border-white/10 text-slate-300 bg-white/5 self-start sm:self-auto">
+                                        <span className="text-base px-2.5 py-0.5 rounded-full border border-white/10 text-slate-300 bg-white/5 self-start sm:self-auto">
                                             {edu.period}
                                         </span>
                                     </div>
 
-                                    <p className="text-xs md:text-sm font-semibold text-blue-400 mb-2">
+                                    <p className="text-base md:text-lg font-semibold text-blue-400 mb-2">
                                         {edu.subtitle} {edu.school ? `• ${edu.school}` : ''}
                                     </p>
 
-                                    <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-normal opacity-90">
+                                    <p className="text-base md:text-lg text-slate-300 leading-relaxed font-normal opacity-90">
                                         {edu.description}
                                     </p>
                                 </div>

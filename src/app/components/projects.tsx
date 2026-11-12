@@ -59,17 +59,17 @@ export default function Projects() {
             className="w-full py-12 px-6 flex flex-col items-center justify-center"
         >
             <div className="w-full max-w-6xl">
-                <div className="mb-10 md\:text-left">
-                    <h2 className="text-2xl md\:text-3xl font-bold text-white tracking-tight">
+                <div className="mb-10 md:text-left">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
                         Mes projets
                     </h2>
-                    <p className="text-slate-400 mt-1.5 text-sm md\:text-base">
+                    <p className="text-slate-400 mt-1.5 text-lg md:text-xl">
                         Découvrez mes réalisations techniques et dépôts.
                     </p>
                 </div>
 
                 {loading ? (
-                    <div className="text-center text-slate-400 py-12 text-sm">
+                    <div className="text-center text-slate-400 py-12 text-lg">
                         Chargement des projets depuis GitHub...
                     </div>
                 ) : (
@@ -82,22 +82,22 @@ export default function Projects() {
                                 rel="noopener noreferrer"
                                 className="flex flex-col rounded-xl bg-white/5 backdrop-blur-xl border border-white/10 p-5 transition-all hover\:bg-white/10 hover\:border-white/20 shadow-lg group"
                             >
-                                <div className="flex items-center justify-between gap-3 h-6 mb-3">
-                                    <div className="flex items-center gap-2 min-w-0 h-6">
-                                        <GoRepo className="shrink-0 text-slate-400 text-base" />
-                                        <span className="font-semibold group-hover\:underline text-base truncate">
+                                <div className="flex items-center justify-between gap-3 h-8 mb-3">
+                                    <div className="flex items-center gap-2 min-w-0 h-8">
+                                        <GoRepo className="shrink-0 text-slate-400 text-lg" />
+                                        <span className="font-semibold group-hover:underline text-lg truncate">
                                             {formatRepoName(project.name)}
                                         </span>
                                     </div>
                                     {project.stargazers_count > 0 && (
-                                        <div className="flex items-center justify-end gap-1 text-slate-300 text-sm h-6 shrink-0">
-                                            <FaStar className="text-yellow-400 text-[0.65rem] translate-y-[-1.5px]" />
+                                        <div className="flex items-center justify-end gap-1 text-slate-300 text-base h-8 shrink-0">
+                                            <FaStar className="text-yellow-400 text-sm translate-y-[-1px]" />
                                             <span className="leading-none">{project.stargazers_count}</span>
                                         </div>
                                     )}
                                 </div>
 
-                                <p className="text-xs sm\:text-sm text-slate-300 leading-relaxed line-clamp-2 mb-3">
+                                <p className="text-base sm:text-lg text-slate-300 leading-relaxed line-clamp-2 mb-3">
                                     {project.description || "Aucune description fournie."}
                                 </p>
 
@@ -106,7 +106,7 @@ export default function Projects() {
                                         {project.topics.map((topic) => (
                                             <span
                                                 key={topic}
-                                                className="text-[0.65rem] leading-none text-blue-300 bg-blue-500/15 border border-blue-400/20 px-2 py-1 rounded-full"
+                                                className="text-sm leading-none text-blue-300 bg-blue-500/15 border border-blue-400/20 px-2 py-1 rounded-full"
                                             >
                                                 {topic}
                                             </span>
@@ -114,7 +114,7 @@ export default function Projects() {
                                     </div>
                                 )}
 
-                                <div className="mt-auto flex items-center justify-between text-xs pt-3 border-t border-white/5">
+                                <div className="mt-auto flex items-center justify-between text-base pt-3 border-t border-white/5">
                                     {project.language ? (
                                         <span className="flex items-center gap-1.5">
                                             <span
@@ -127,8 +127,8 @@ export default function Projects() {
                                     ) : (
                                         <span />
                                     )}
-                                    <span className="font-medium flex items-center gap-1 group-hover\:translate-x-0.5 transition-transform">
-                                        Voir <FaAngleRight className="text-xs" />
+                                    <span className="font-medium flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                                        Voir <FaAngleRight className="text-sm" />
                                     </span>
                                 </div>
                             </a>

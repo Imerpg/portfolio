@@ -29,10 +29,10 @@ export default function SkillsMatrix() {
             <div className="w-full max-w-6xl">
                 
                 <div className="mb-10 text-center md:text-left">
-                    <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
                         Mes Compétences
                     </h2>
-                    <p className="text-slate-400 mt-1.5 text-sm md:text-base">
+                    <p className="text-slate-400 mt-1.5 text-lg md:text-xl">
                         Ma stacks technique et mes domaines d'expertise.
                     </p>
                 </div>
@@ -48,14 +48,14 @@ export default function SkillsMatrix() {
                                     <div className="p-2 rounded-lg bg-white/5 border border-white/5">
                                         {cat.icon}
                                     </div>
-                                    <h3 className="text-sm md:text-base font-bold text-white tracking-tight">
+                                    <h3 className="text-lg md:text-xl font-bold text-white tracking-tight">
                                         {cat.title}
                                     </h3>
                                 </div>
 
                                 <ul className="space-y-2.5">
                                     {cat.skills.map((skill, sIdx) => (
-                                        <li key={sIdx} className="text-xs md:text-sm text-slate-300 flex items-start gap-2">
+                                        <li key={sIdx} className="text-base md:text-lg text-slate-300 flex items-start gap-2">
                                             <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400/80 shrink-0"></span>
                                             <span className="opacity-95 leading-relaxed">{skill}</span>
                                         </li>
