@@ -14,6 +14,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16.8px;
 }
 
 body {
@@ -21,4 +22,11 @@ body {
   color: var(--foreground);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   min-height: 100vh;
+}
+
+/* Norme accessibilité : taille minimale de police 16.8px */
+h1, h2, h3, h4, h5, h6,
+p, span, li, a, strong, em, small, blockquote, cite, code,
+.text-xs, .text-sm, .text-base, .text-lg, .text-xl, .text-2xl, .text-3xl, .text-4xl, .text-5xl {
+  font-size: max(16.8px, inherit) !important;
 }
