@@ -14,14 +14,10 @@ export default function Education() {
                     </p>
                 </div>
 
-                {/* Conteneur avec la ligne verticale pointillée en arrière-plan */}
                 <div className="relative border-l border-dashed border-white/20 ml-4 md:ml-6 space-y-8">
                     {educationData.map((edu) => (
                         <div key={edu.id} className="relative pl-6 md:pl-8">
-                            {/* Petit point indicateur sur la ligne pointillée */}
                             <div className="absolute -left-[7px] top-6 w-3.5 h-3.5 rounded-full bg-blue-500/80 border-4 border-[#0a0a0c] shadow-md" />
-
-                            {/* La box du diplôme */}
                             <div className="rounded-xl bg-white/5 backdrop-blur-xl border border-white/10 p-5 md:p-6 transition-all shadow-lg flex flex-col sm:flex-row items-start gap-4 md:gap-6">
                                 <div className="p-3 rounded-xl bg-white/5 text-blue-400 border border-white/5 shrink-0">
                                     <FaGraduationCap size={24} />
