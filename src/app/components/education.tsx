@@ -22,7 +22,7 @@ export default function Education() {
                             <div className="absolute -left-[7px] top-6 w-3.5 h-3.5 rounded-full bg-blue-500/80 border-4 border-[#0a0a0c] shadow-md" />
 
                             {/* La box du diplôme */}
-                            <div className="rounded-xl bg-white/5 backdrop-blur-xl border border-white/10 p-5 md:p-6 transition-all hover:bg-white/10 hover:border-white/20 shadow-lg flex flex-col sm:flex-row items-start gap-4 md:gap-6">
+                            <div className="rounded-xl bg-white/5 backdrop-blur-xl border border-white/10 p-5 md:p-6 transition-all shadow-lg flex flex-col sm:flex-row items-start gap-4 md:gap-6">
                                 <div className="p-3 rounded-xl bg-white/5 text-blue-400 border border-white/5 shrink-0">
                                     <FaGraduationCap size={24} />
                                 </div>
