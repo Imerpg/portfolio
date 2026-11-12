@@ -10,6 +10,8 @@ interface GitHubRepo {
     stargazers_count: number;
     language: string | null;
     topics?: string[];
+    created_at: string;
+    updated_at: string;
 }
 
 function formatRepoName(name: string): string {
@@ -42,7 +44,19 @@ export default function Projects() {
             .then((data) => {
                 if (Array.isArray(data)) {
                     setRepos(
-                        data.filter((repo: GitHubRepo) => repo.name.toLowerCase() !== "imerpg")
+                        data
+                            .filter((repo: GitHubRepo) => {
+                                // On exclut le repo du profil (souvent un README perso)
+                                const isNotProfileRepo = repo.name.toLowerCase() !== "imerpg";
+                                // Optionnel : s'assurer qu'il a un minimum de contenu (description ou étoiles)
+                                const hasContent = repo.description || repo.stargazers_count > 0;
+
+                                return isNotProfileRepo && hasContent;
+                            })
+                            .sort((a: GitHubRepo, b: GitHubRepo) => {
+                                // Tri du plus récemment mis à jour au plus ancien
+                                return new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime();
+                            })
                     );
                 }
                 setLoading(false);
@@ -91,7 +105,7 @@ export default function Projects() {
                                     </div>
                                     {project.stargazers_count > 0 && (
                                         <div className="flex items-center justify-end gap-1 text-slate-300 text-base h-8 shrink-0">
-                                            <FaStar className="text-yellow-400 text-sm translate-y-[-1px]" />
+                                            <FaStar className="text-yellow-400 text-sm translate-y-[-2px]" />
                                             <span className="leading-none">{project.stargazers_count}</span>
                                         </div>
                                     )}
