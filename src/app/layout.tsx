@@ -9,7 +9,7 @@ const josefin_Sans = Josefin_Sans({
 
 export const metadata = {
   title: "Rémi Constans | Portfolio",
-  description: "Développeur Concepteur C# / .NET & Web",
+  description: "Développeur Full Stack & Concepteur d'Applications",
   icons: {
     icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗒️</text></svg>",
   },
