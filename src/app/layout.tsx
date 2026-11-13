@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Josefin_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
 const josefin_Sans = Josefin_Sans({
@@ -27,6 +28,7 @@ export default function RootLayout({
         style={{userSelect: 'none'}}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
