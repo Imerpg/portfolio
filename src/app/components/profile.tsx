@@ -4,7 +4,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Profile() {
     return (
         <section id="profile" className="w-full h-screen py-12 px-6 flex flex-col items-center justify-center">
-            <div className="rounded-xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg max-w-6xl w-full p-6 md:p-10 transition-all">
+            <div className="rounded-xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg max-w-xl w-full p-6 md:p-10 transition-all">
                 <div className="flex flex-col items-center text-center">
                     <div className="relative p-1 rounded-full bg-white/10 border border-white/5 shadow-inner">
                         <Image
